@@ -1,0 +1,7 @@
+pdf2image
+opencv-python
+scipy
+matplotlib
+pylsd-nova
+pytesseract
+XlsxWriter

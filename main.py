@@ -30,14 +30,9 @@ file_output= Path.joinpath(joined_path,"Pages")
 
 #If the format is in pdf then convert it to jpegs
 if filename.split(".")[-1]=="pdf":
-    converter.convert_to_jpeg(file_input,file_output)
+    one = converter.convert_to_jpeg(file_input,file_output)
 else:
-    converter.in_jpeg(file_input,file_output)
-
-
-page= Path("Pages")
-#Process page 1
-one = Path.joinpath(page,"page1.jpg")
+    one = converter.in_jpeg(file_input,file_output)
 
 #Generating binary images and doing morphological operations
 preproces.process(Path.joinpath(joined_path,one))
