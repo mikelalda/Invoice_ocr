@@ -5,3 +5,5 @@ matplotlib
 pylsd-nova
 pytesseract
 XlsxWriter
+ocrd-fork-pylsd
+scipy
